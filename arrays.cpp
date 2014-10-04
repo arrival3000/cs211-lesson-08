@@ -21,8 +21,7 @@ void task_2()
 {
     int a[5] = {0};
     
-    //assert(!a[4]) or assert(a[4]) -- place here one of these and
-    //                                 explain your choice in commit msg
+    assert(!a[4]);
 }
 
 // returns zero
@@ -78,4 +77,9 @@ void task_6_poor_copy(int * arr1, int * arr2)
         std::cout << a[i] << delim;
     }
 }*/
+
+int main()
+{
+    task_2();
+}
 
