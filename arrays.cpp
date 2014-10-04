@@ -70,24 +70,27 @@ void task_6_poor_copy(int * arr1, int * arr2)
 
 // Task 7
 // print array `arr`
-/*void task_7_print(int * arr, int size, char delim = ' ')
+void task_7_print(int * arr, int size, char delim = ' ')
 {
     // Hint: something wrong here; run this from main()
-    for(int i = 0; i <= size; ++i)
+    for(int i = 0; i < size; ++i)
     {
-        std::cout << a[i] << delim;
+        std::cout << arr[i] << delim;
     }
-}*/
+}
 
 int main()
 {
     task_2();
+
     task_3_zero();
+
     task_4();
+
     const int n = 4;
     int a[n] = {1, 2, 3, 4};
     int b[n];
-
     task_5_copy(a, b, n);
+    task_7_print(b, n);
 }
 
