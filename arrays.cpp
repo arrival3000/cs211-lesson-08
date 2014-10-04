@@ -32,6 +32,7 @@ int task_3_zero()
     // Hint 2: you can use only one zero and not five of them! cf. task 2
     int a[5];
     
+    a[4] = 0;
     assert(!a[4]);
     return a[4]; // don't touch this!
 }
@@ -81,5 +82,6 @@ void task_6_poor_copy(int * arr1, int * arr2)
 int main()
 {
     task_2();
+    task_3_zero();
 }
 
