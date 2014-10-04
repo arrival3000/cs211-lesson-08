@@ -42,7 +42,9 @@ void task_4()
     // Hint: fix with initialization (not assignment)
     int a[5];
     
-    for (int i = 0; i < 
+    for (int i = 0; i < 4; i++)
+	a[i] = i + 1;
+
     assert(a[0] == 1);
     assert(a[1] == 2);
     assert(a[2] == 3);

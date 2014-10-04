@@ -40,9 +40,8 @@ void task_4()
 {
     // Task 4: asserts at the end must hold
     // Hint: fix with initialization (not assignment)
-    int a[5];
-    
-    //for (int i = 0; i < 
+    int a[5] = {1, 2, 3, 4, 5};
+
     assert(a[0] == 1);
     assert(a[1] == 2);
     assert(a[2] == 3);
