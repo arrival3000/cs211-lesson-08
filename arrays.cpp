@@ -53,7 +53,8 @@ void task_4()
 // copy arr1 to arr2
 void task_5_copy(int * arr1, int * arr2, int size)
 {
-    arr2 = arr1;
+    for (int i = 0; i < size; i++)
+	arr2[i] = arr1[i];
 }
 
 // Task 6
@@ -82,5 +83,11 @@ int main()
 {
     task_2();
     task_3_zero();
+    task_4();
+    const int n = 4;
+    int a[n] = {1, 2, 3, 4};
+    int b[n];
+
+    task_5_copy(a, b, n);
 }
 
