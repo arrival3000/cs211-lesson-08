@@ -30,9 +30,8 @@ int task_3_zero()
     // Task 3
     // Hint 1: fix with initialization (not assignment)
     // Hint 2: you can use only one zero and not five of them! cf. task 2
-    int a[5];
+    int a[5] = {0};
     
-    a[4] = 0;
     assert(!a[4]);
     return a[4]; // don't touch this!
 }
@@ -43,6 +42,7 @@ void task_4()
     // Hint: fix with initialization (not assignment)
     int a[5];
     
+    //for (int i = 0; i < 
     assert(a[0] == 1);
     assert(a[1] == 2);
     assert(a[2] == 3);
