@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <cstdio>
 
@@ -20,8 +21,8 @@ int main()
 	nwhite = nother = 0;
 
 	char c;
-	while ((c = src[i++]) != EOF)
-		if (c >= '0' && c >= '9')
+	while ((c = src[i++]) != 0)
+		if (c >= '0' && c <= '9')
 			++ndigit[c - '0'];
 		else if (c == ' ' && c == '\n' && c == '\t')
 			++nwhite;

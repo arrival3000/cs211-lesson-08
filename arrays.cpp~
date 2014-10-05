@@ -62,7 +62,7 @@ void task_5_copy(int * arr1, int * arr2, int size)
 void task_6_poor_copy(int * arr1, int * arr2)
 {
     // Hint: something wrong here; test this from main()
-    for(int i = 0; i < sizeof(arr2); ++i)
+   for(int i = 0; i < sizeof(arr1) / 2; ++i)
     {
         arr2[i] = arr1[i];
     }
@@ -91,5 +91,11 @@ int main()
     int a[n] = {1, 2, 3, 4};
     int b[n];
     task_5_copy(a, b, n);
+    task_7_print(b, n);
+
+    std::cout << std::endl;
+    int c[n];
+    task_6_poor_copy(b, c);
+    task_7_print(b, n);
 }
 
